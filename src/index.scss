@@ -1,0 +1,33 @@
+@import './shared/sass/variable';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //This defines what 1 rem is
+  font-size: 62.5%; // 1 rem  = 10px; 10px/16px= 62.5%;
+}
+body {
+  font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: 3rem;
+
+
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+//Custom Selection colors
+::selection {
+  background-color: $primary-color; 
+}
+

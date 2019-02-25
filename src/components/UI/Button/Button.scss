@@ -1,0 +1,42 @@
+@import '../../../shared/sass/variable';
+.Button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: .8rem 2rem;
+    margin: 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: all .3s;
+
+    &:first-of-type{
+        margin-left: 0;
+        padding-left:0; 
+    }
+    &:hover{
+        background-color: #ccc;
+        color: white;
+    }
+
+    &:disabled{
+        color:#ccc;
+        cursor: not-allowed;
+    }
+
+    
+}
+
+.Green{
+        color: $primary-color;
+    }
+.DarkBlue{
+        color: $primary-color-dark;
+}
+
+.Blue {
+    color: blue;
+}
+

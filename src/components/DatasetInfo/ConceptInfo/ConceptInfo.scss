@@ -1,0 +1,66 @@
+@import '../../../shared/sass/variable';
+.Conceptnfo {
+    margin-left: 5rem;
+    margin-right: 10rem;
+
+    .ConceptUrl {   
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+
+        span {
+            color: $primary-color-dark;
+        }
+    }
+    .Property {
+        margin-top: 2rem;
+        text-align: center;
+        color: $primary-color-dark;
+        font-size: 1.8rem;
+    }
+
+    .Metadata {
+        display: flex;
+        justify-content: space-between;
+
+        .Metbox {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                color: rgba($color-black, 0.6);
+                font-size: 1.4rem;
+                margin-bottom: 7px;
+            }
+            p{
+                color: rgba($color-black, 0.5);
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    table {
+        margin-top: 2rem;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: $card-shadow;
+      }
+      thead {
+        background-color: rgba($color-black, 0.8);
+        color: $color-white;
+        font-size: 1.4rem;
+        border-radius: 5px;
+      }
+      
+      th, td {
+        text-align: left;
+        padding: 16px;
+        font-size: 1.4rem;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+}

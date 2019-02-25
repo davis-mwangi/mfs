@@ -1,0 +1,27 @@
+@import '../../../shared/sass/variable';
+.Toolbar{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    z-index: 90;
+    box-shadow: $card-shadow;
+
+    .Logo {
+        padding-top: 0.6%;
+        width: 20%;
+        height: 97%;
+    }
+
+    .Nav {
+        height: 100%;
+        justify-items: center;
+    }
+}

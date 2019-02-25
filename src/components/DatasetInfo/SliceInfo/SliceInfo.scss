@@ -1,0 +1,32 @@
+@import '../../../shared/sass/variable';
+.SliceInfo {
+    margin-left: 5rem;
+    margin-right: 10rem;
+
+    .Heading2 {   
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+
+        span {
+            color: $primary-color-dark;
+        }
+    }
+
+    .Heading3 {   
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+
+        span {
+            color: $primary-color-dark;
+        }
+    }
+    .Property {
+        margin-top: 2rem;
+        text-align: left;
+        color: $primary-color-dark;
+        font-size: 1.8rem;
+    }
+
+}
