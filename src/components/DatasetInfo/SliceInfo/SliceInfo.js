@@ -182,25 +182,37 @@ class SliceInfo  extends Component {
              
           </form>
       );
-     
-    
-      //Function to get all keys from an object array
-    const columns = [{
-        Header: 'census_tract_number',
-        accessor:"census_tract_number"
-    }, 
-    {
-        Header: 'census_tracts',
-        accessor:"census_tracts"
-    },{
-        Header: 'county_code',
-        accessor:"county_code"
-    },{
-        Header: 'msamd',
-        accessor:"state_code"
-    }]
 
-      //Get keys from slice array
+      
+      //Function to get all keys from an object array
+    // const columns = [{
+    //     Header: 'census_tract_number',
+    //     accessor:"census_tract_number"
+    // }, 
+    // {
+    //     Header: 'census_tracts',
+    //     accessor:"census_tracts"
+    // },{
+    //     Header: 'county_code',
+    //     accessor:"county_code"
+    // },{
+    //     Header: 'msamd',
+    //     accessor:"state_code"
+    // }]
+    let keys = [];
+    let arr = this.props.table;
+    (arr || []).map(item => (
+       keys.push(Object.keys(item))
+    ));
+
+    let columns = [];
+    (keys[0] || []).forEach(val => (
+        columns.push({Header: val, accessor: val})
+    ));
+   
+    console.log(columns);
+    
+     
         return (
             <div className={classes.SliceInfo}>
                 <p className={classes.Heading2}><span>Slice: </span>{this.props.dataset}</p>
